@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d5134b4.css",
-    "main.js": "/static/js/main.47fa3e55.js",
+    "main.css": "/static/css/main.02e6b2eb.css",
+    "main.js": "/static/js/main.b5efcee7.js",
     "static/media/banner.jpg": "/static/media/banner.f0b8ff8a15e0f19cfeee.jpg",
     "static/media/dungeon.jpg": "/static/media/dungeon.0e6ae32b020e04e67ccf.jpg",
     "static/media/surrender.jpg": "/static/media/surrender.3a8e57ba06f5a52fc998.jpg",
@@ -18,11 +18,11 @@
     "static/media/blue_wear.jpg": "/static/media/blue_wear.c5993c1282df3e016c8c.jpg",
     "static/media/front_boobs.jpg": "/static/media/front_boobs.37faa597e91d95ebe260.jpg",
     "index.html": "/index.html",
-    "main.9d5134b4.css.map": "/static/css/main.9d5134b4.css.map",
-    "main.47fa3e55.js.map": "/static/js/main.47fa3e55.js.map"
+    "main.02e6b2eb.css.map": "/static/css/main.02e6b2eb.css.map",
+    "main.b5efcee7.js.map": "/static/js/main.b5efcee7.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d5134b4.css",
-    "static/js/main.47fa3e55.js"
+    "static/css/main.02e6b2eb.css",
+    "static/js/main.b5efcee7.js"
   ]
 }

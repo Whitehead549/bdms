@@ -23,7 +23,7 @@ const Home = () => {
 
           {/* Content Section */}
           <div className="relative z-10 text-center px-6 py-12 md:py-20">
-            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-red-600 leading-tight">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-red-600 leading-tight lg:pt-32">
               Mistress Veronica
             </h1>
             <p className="text-base sm:text-lg md:text-xl mt-4 text-gray-300 max-w-2xl mx-auto">
