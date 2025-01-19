@@ -1,6 +1,7 @@
 import React from "react";
 import mistressElena from "../assets/banner.jpg";
 import Address from "../components/Address";
+import Mistress from "../components/Mistress";
 
 const Home = () => {
   return (
@@ -39,6 +40,7 @@ const Home = () => {
         </div>
 
         {/* Address Section */}
+        <Mistress />
         <Address />
       </div>
     </>

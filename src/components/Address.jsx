@@ -42,11 +42,11 @@ const Address = () => {
 
         {/* Email */}
         <div className="mt-8">
-          <p className="font-semibold">
+          <p className="font-semibold text-red-800">
             Email:{" "}
             <a
               href={`mailto:${email}`}
-              className="text-blue-600 underline hover:text-blue-800"
+              className="text-red-600 underline hover:text-blue-800"
             >
               {email}
             </a>
@@ -60,14 +60,14 @@ const Address = () => {
               {link.isButton ? (
                 <a
                   href={link.href}
-                  className="bg-red-600 px-6 py-3 rounded-md font-medium text-lg hover:bg-blue-700 transition"
+                  className="bg-red-600 px-6 py-3 rounded-md font-medium text-lg hover:bg-red-800 transition"
                 >
                   {link.text}
                 </a>
               ) : (
                 <a
                   href={link.href}
-                  className="text-blue-600 underline text-lg hover:text-blue-800"
+                  className="text-red-600 underline text-lg hover:text-red-800"
                 >
                   {link.text}
                 </a>
