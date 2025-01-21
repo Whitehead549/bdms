@@ -1,88 +1,47 @@
-import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { HiMenuAlt3 } from "react-icons/hi";
-import { FaRegWindowClose } from "react-icons/fa";
-import ResponsiveMenu from "./ResponsiveMenu";
+import React from "react";
+import { NavLink } from "react-router-dom";
+
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
-
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
-
   return (
-    <div className="fixed top-0 left-0 w-full text-[#ffffff] bg-[#000300] shadow-md z-[9999]">
-      {/* Main Navbar */}
-      <div className="container mx-auto px-4 lg:px-8 py-4 flex justify-between items-center">
-        {/* Logo Section */}
-        <div className="flex-shrink-0">
-          <Link to="/" onClick={() => window.scrollTo(0, 0)}>
-            <h1 className="text-2xl font-bold text-red-600 font-lobster">Passion</h1>
-          </Link>
-        </div>
-
-        {/* Desktop Navigation Links */}
-        <div className="hidden md:flex gap-6 items-center">
+    <div className="fixed top-0 left-0 w-full text-pink-500 bg-[#000300] shadow-md z-[9999]">
+      <div className="container mx-auto px-4 lg:px-8 py-8 flex justify-center ">
+        <nav className="flex gap-8 space-x-2">
           <NavLink
             to="/"
             className={({ isActive }) =>
               isActive
-                ? "text-[#ffffff] font-semibold"
-                : "hover:text-gray-400  transition-colors duration-300"
+                ? "text-pink-500 font-semibold border-b-2 border-pink-500 pb-1"
+                : "hover:text-pink-300 transition-colors duration-300"
             }
             onClick={() => window.scrollTo(0, 0)}
           >
             Home
           </NavLink>
           <NavLink
-            to="/services"
+            to="/serve"
             className={({ isActive }) =>
               isActive
-                ? "text-[#ffffff] font-semibold"
-                : "hover:text-gray-400 transition-colors duration-300"
+                ? "text-pink-500 font-semibold border-b-2 border-pink-500 pb-1"
+                : "hover:text-pink-300 transition-colors duration-300"
             }
             onClick={() => window.scrollTo(0, 0)}
           >
-            My Dungeon
+            Serve Me
           </NavLink>
           <NavLink
-            to="/contact"
+            to="/gallery"
             className={({ isActive }) =>
               isActive
-                ? "text-[#ffffff] font-semibold"
-                : "hover:text-gray-400 transition-colors duration-300"
+                ? "text-pink-500 font-semibold border-b-2 border-pink-500 pb-1"
+                : "hover:text-pink-300 transition-colors duration-300"
             }
             onClick={() => window.scrollTo(0, 0)}
           >
-            Contact Me
+            Gallery
           </NavLink>
-        </div>
-
-        {/* Mobile Hamburger Menu */}
-        <div className="md:hidden flex items-center">
-          {showMenu ? (
-            <FaRegWindowClose
-              onClick={toggleMenu}
-              className="cursor-pointer text-[#ffffff] transition-transform transform hover:scale-110"
-              size={30}
-            />
-          ) : (
-            <HiMenuAlt3
-              onClick={toggleMenu}
-              className="cursor-pointer text-[#ffffff] transition-transform transform hover:scale-110"
-              size={30}
-            />
-          )}
-        </div>
+        </nav>
       </div>
-
-      {/* Responsive Menu */}
-      {showMenu && (
-        <div className="md:hidden bg-[#000300] absolute top-full left-0 w-full shadow-md transition-all duration-300">
-          <ResponsiveMenu setShowMenu={setShowMenu} showMenu={showMenu} />
-        </div>
-      )}
     </div>
   );
 };

@@ -1,28 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.02e6b2eb.css",
-    "main.js": "/static/js/main.b5efcee7.js",
-    "static/media/banner.jpg": "/static/media/banner.f0b8ff8a15e0f19cfeee.jpg",
+    "main.css": "/static/css/main.bd2f2449.css",
+    "main.js": "/static/js/main.b69e38db.js",
     "static/media/dungeon.jpg": "/static/media/dungeon.0e6ae32b020e04e67ccf.jpg",
+    "static/media/intro.jpg": "/static/media/intro.7c70edac969cbff686c7.jpg",
     "static/media/surrender.jpg": "/static/media/surrender.3a8e57ba06f5a52fc998.jpg",
     "static/media/slave_miss.jpg": "/static/media/slave_miss.38520d7ae25ed8a6fb30.jpg",
-    "static/media/cinderella.jpg": "/static/media/cinderella.8d6d028a5b2cc926fdb6.jpg",
     "static/media/dark_room.jpg": "/static/media/dark_room.6b5defae7729231481dd.jpg",
-    "static/media/exp_butt.jpg": "/static/media/exp_butt.2b336d8a29de5f892f8e.jpg",
     "static/media/Knight.jpg": "/static/media/Knight.3f2dd4f509074d01c3aa.jpg",
     "static/media/red_wear.jpg": "/static/media/red_wear.28215e904e2dd7c9339e.jpg",
     "static/media/pink_room.jpg": "/static/media/pink_room.eb5a175938003222c199.jpg",
-    "static/media/nurse.jpg": "/static/media/nurse.532646479c969cc58e80.jpg",
-    "static/media/net_wear.jpg": "/static/media/net_wear.fde87f4a6599dbe5c9a9.jpg",
-    "static/media/white_cat.jpg": "/static/media/white_cat.bde7c6b4ef1b9d6151bd.jpg",
     "static/media/blue_wear.jpg": "/static/media/blue_wear.c5993c1282df3e016c8c.jpg",
-    "static/media/front_boobs.jpg": "/static/media/front_boobs.37faa597e91d95ebe260.jpg",
     "index.html": "/index.html",
-    "main.02e6b2eb.css.map": "/static/css/main.02e6b2eb.css.map",
-    "main.b5efcee7.js.map": "/static/js/main.b5efcee7.js.map"
+    "main.bd2f2449.css.map": "/static/css/main.bd2f2449.css.map",
+    "main.b69e38db.js.map": "/static/js/main.b69e38db.js.map"
   },
   "entrypoints": [
-    "static/css/main.02e6b2eb.css",
-    "static/js/main.b5efcee7.js"
+    "static/css/main.bd2f2449.css",
+    "static/js/main.b69e38db.js"
   ]
 }
