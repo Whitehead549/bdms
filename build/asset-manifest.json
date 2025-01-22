@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.77e06fd3.css",
-    "main.js": "/static/js/main.19b92d70.js",
+    "main.css": "/static/css/main.0509202f.css",
+    "main.js": "/static/js/main.1e854287.js",
     "static/media/dungeon.jpg": "/static/media/dungeon.0e6ae32b020e04e67ccf.jpg",
     "static/media/intro.jpg": "/static/media/intro.7c70edac969cbff686c7.jpg",
     "static/media/surrender.jpg": "/static/media/surrender.3a8e57ba06f5a52fc998.jpg",
@@ -10,13 +10,16 @@
     "static/media/Knight.jpg": "/static/media/Knight.3f2dd4f509074d01c3aa.jpg",
     "static/media/red_wear.jpg": "/static/media/red_wear.28215e904e2dd7c9339e.jpg",
     "static/media/pink_room.jpg": "/static/media/pink_room.eb5a175938003222c199.jpg",
+    "static/media/net_wear.jpg": "/static/media/net_wear.fde87f4a6599dbe5c9a9.jpg",
+    "static/media/white_cat.jpg": "/static/media/white_cat.bde7c6b4ef1b9d6151bd.jpg",
     "static/media/blue_wear.jpg": "/static/media/blue_wear.c5993c1282df3e016c8c.jpg",
+    "static/media/front_boobs.jpg": "/static/media/front_boobs.37faa597e91d95ebe260.jpg",
     "index.html": "/index.html",
-    "main.77e06fd3.css.map": "/static/css/main.77e06fd3.css.map",
-    "main.19b92d70.js.map": "/static/js/main.19b92d70.js.map"
+    "main.0509202f.css.map": "/static/css/main.0509202f.css.map",
+    "main.1e854287.js.map": "/static/js/main.1e854287.js.map"
   },
   "entrypoints": [
-    "static/css/main.77e06fd3.css",
-    "static/js/main.19b92d70.js"
+    "static/css/main.0509202f.css",
+    "static/js/main.1e854287.js"
   ]
 }

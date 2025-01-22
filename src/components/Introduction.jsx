@@ -3,13 +3,13 @@ import PersonalService from "../assets/intro.jpg"; // Import an image for the le
 
 const Introduction = () => {
   return (
-    <div className="per-service py-12 px-4 md:py-16 lg:py-24 md:px-8 lg:px-20 text-[#ffffff] bg-[#000300]">
+    <div className="per-service py-24 px-4 md:py-16 lg:py-24 md:px-8 lg:px-20 text-[#ffffff] bg-[#000300]">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
         {/* Section 1: Progress Bars */}
         <div className="section-left flex-1 w-full lg:w-1/2">
           <div className="section-title mb-8">
             <div className="title-header">
-              <h1 className="text-lg md:text-xl lg:text-2xl uppercase tracking-wide font-[100] mb-4">
+              <h1 className="text-md md:text-xl lg:text-2xl uppercase tracking-wide font-[100] mb-4">
                 Mistress Veronica Vixen
               </h1>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FFF5F5] leading-tight font-lobster">

@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 lg:px-8 py-8 flex justify-center ">
         <nav className="flex gap-8 space-x-2">
           <NavLink
-            to="/"
+            to="/home"
             className={({ isActive }) =>
               isActive
                 ? "text-pink-500 font-semibold border-b-2 border-pink-500 pb-1"
