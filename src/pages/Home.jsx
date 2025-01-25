@@ -5,7 +5,7 @@ import Introduction from "../components/Introduction";
 const Home = () => {
   return (
     <>
-    <div className="mx-6 lg:mx-[18rem]">
+    <div className="lg:mx-[18rem] px-2 sm:px-6">
         <Introduction />
         <Address />
     </div>
