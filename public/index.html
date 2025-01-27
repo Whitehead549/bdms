@@ -9,12 +9,50 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-
     <title>Dashboard - Selma Briggs Wilson</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@500;700&display=swap"
       rel="stylesheet"
     />
+
+    <style>
+      /* Aligning the "Powered by Google" Text Horizontally */
+
+     
+
+      .goog-te-gadget {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        color: #ffffff; /* Adjust the text color if needed */
+        height:32px;
+        width:auto;
+        
+       
+      }
+    
+      .goog-logo-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px; /* Space between the text and logo */
+        text-decoration: none;
+      }
+    
+      .goog-logo-link img {
+        width: 14px; /* Resize the logo */
+        height: auto;
+        vertical-align: middle; /* Align with text */
+      }
+    
+      /* Hide additional unwanted elements */
+      .goog-te-gadget span { 
+        display: none; /* Hides "Choose Language" text if needed */
+      }
+    </style>
+    
 
     <!-- Google Translate Widget Script -->
     <script type="text/javascript">
@@ -23,17 +61,15 @@
       }
     </script>
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-    
-
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
-
-
-
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
   </body>
 </html>

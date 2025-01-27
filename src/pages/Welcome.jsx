@@ -4,6 +4,7 @@ import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 import image1 from "../assets/front_boobs.jpg";
 import image2 from "../assets/white_cat.jpg";
 import image3 from "../assets/net_wear.jpg";
+import Translate from "../components/Translate";
 
 const Welcome = () => {
   const images = [image1, image2, image3];
@@ -35,33 +36,9 @@ const Welcome = () => {
 
       {/* Buttons and Social Media Icons */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center space-y-8">
-        {/* Social Media Icons */}
-        <div className="flex space-x-6 mb-8">
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white text-4xl hover:text-pink-500 transition-colors duration-300"
-          >
-            <FaFacebook />
-          </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white text-4xl hover:text-pink-500 transition-colors duration-300"
-          >
-            <FaInstagram />
-          </a>
-          <a
-            href="https://tiktok.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white text-4xl hover:text-pink-500 transition-colors duration-300"
-          >
-            <FaTiktok />
-          </a>
-        </div>
+        {/* Translator */}
+        <Translate />
+       
 
         <Link
           to="/home"
