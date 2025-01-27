@@ -20,7 +20,7 @@ const Translate = () => {
     zIndex: 50,
     display: 'inline-block',
     padding: '8px',
-    backgroundColor: '#ffffff', // White background
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
     borderRadius: '32px', // Rounded corners
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', // Subtle shadow
   };
