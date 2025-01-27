@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cfee97e1.css",
-    "main.js": "/static/js/main.4ea81fdb.js",
+    "main.css": "/static/css/main.ebe68ca1.css",
+    "main.js": "/static/js/main.b6adc1a8.js",
     "static/media/dungeon.jpg": "/static/media/dungeon.0e6ae32b020e04e67ccf.jpg",
     "static/media/intro.jpg": "/static/media/intro.7c70edac969cbff686c7.jpg",
     "static/media/surrender.jpg": "/static/media/surrender.3a8e57ba06f5a52fc998.jpg",
@@ -15,11 +15,11 @@
     "static/media/blue_wear.jpg": "/static/media/blue_wear.c5993c1282df3e016c8c.jpg",
     "static/media/front_boobs.jpg": "/static/media/front_boobs.37faa597e91d95ebe260.jpg",
     "index.html": "/index.html",
-    "main.cfee97e1.css.map": "/static/css/main.cfee97e1.css.map",
-    "main.4ea81fdb.js.map": "/static/js/main.4ea81fdb.js.map"
+    "main.ebe68ca1.css.map": "/static/css/main.ebe68ca1.css.map",
+    "main.b6adc1a8.js.map": "/static/js/main.b6adc1a8.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfee97e1.css",
-    "static/js/main.4ea81fdb.js"
+    "static/css/main.ebe68ca1.css",
+    "static/js/main.b6adc1a8.js"
   ]
 }

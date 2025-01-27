@@ -1,4 +1,38 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import Modal from "./Modal";
+
+const interests = [
+  "Slave & Submissive",
+  "CBT",
+  "Tease & Denial",
+  "Sissification",
+  "Chastity",
+  "Corporal Punishment",
+  "Bondage",
+  "Blackmail",
+  "Pegging",
+  "Cuckolding",
+  "Small Penis Humiliation",
+  "Public Humiliation",
+  "Foot Worship",
+  "Trampling",
+  "Sensory Deprivation",
+  "Financial Domination",
+  "Collar/Leash",
+  "Face Slapping",
+  "Forced Bisexuality",
+  "Medical Play",
+  "Electro Play",
+  "Water Sports",
+  "Wax Play",
+  "Adult Baby",
+  "Role Play",
+  "Latex Fetish",
+  "Leather Fetish",
+  "Smoking Fetish",
+];
+
 
 const Application = () => {
   const [formData, setFormData] = useState({
@@ -17,25 +51,88 @@ const Application = () => {
     humiliationLevel: '',
     impactPlayLevel: '',
     reasonToServe: '',
+    selectedInterests: [],
   });
+
+   const [isModalOpen, setIsModalOpen] = useState(false);
+   const [modalMessage, setModalMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
+
+  const handleCheckboxChange = (interest) => {
+    const { selectedInterests } = formData;
+    if (selectedInterests.includes(interest)) {
+      setFormData({
+        ...formData,
+        selectedInterests: selectedInterests.filter((i) => i !== interest),
+      });
+    } else {
+      setFormData({
+        ...formData,
+        selectedInterests: [...selectedInterests, interest],
+      });
+    }
+  };
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form Data:', formData);
+    console.log("Form Submitted:", formData);
+  
+
+    // Replace these with your EmailJS details
+    const serviceID = 'service_s0cdg7r';
+    const templateID = 'template_3g48hii';
+    const publicKey = 'XwlnGij6lta-B9A7g';
+
+    emailjs
+      .send(serviceID, templateID, formData, publicKey)
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          setModalMessage("Your Application has been submitted successfully!");
+          setIsModalOpen(true);
+          setFormData({
+            name: '',
+            email: '',
+            websiteDiscovery: '',
+            sessionType: '',
+            bookingDates: '',
+            sessionLength: '1 hour ($600)',
+            kinks: '',
+            toys: '',
+            hardLimits: '',
+            bdsmExperience: '',
+            healthIssues: '',
+            consentForMedia: '',
+            humiliationLevel: '',
+            impactPlayLevel: '',
+            reasonToServe: '',
+            selectedInterests: [],
+          });
+        },
+        (error) => {
+          console.error('FAILED...', error);
+          setModalMessage("Something went wrong. Try again.");
+          setIsModalOpen(true);
+        }
+      );
+     
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-3xl mx-auto p-8 bg-[#000300] shadow-lg rounded-lg ">
-      <div className='flex flex-col items-center justify-center'>
-      <h1 className="text-lg lg:text-4xl font-bold text-center text-[#FFF5F5]">Application Form</h1>
-      <div className="h-0.5 w-1/2 bg-pink-500 mb-6"></div>
+    <>
+    <form onSubmit={handleSubmit} className="max-w-3xl mx-auto p-8 bg-[#000300] shadow-lg rounded-lg">
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="text-lg lg:text-4xl font-bold text-center text-[#FFF5F5]">Application Form</h1>
+        <div className="h-0.5 w-1/2 bg-pink-500 mb-6"></div>
       </div>
-      {/* Field 1: Name */}
+
+      {/* Name Field */}
       <div className="mb-6">
         <label htmlFor="name" className="block text-sm lg:text-md font-medium text-gray-100">
           Your Name (required)
@@ -51,7 +148,7 @@ const Application = () => {
         />
       </div>
 
-      {/* Field 2: Email */}
+      {/* Email Field */}
       <div className="mb-6">
         <label htmlFor="email" className="block text-sm lg:text-md font-medium text-gray-100">
           Your Email (required)
@@ -67,8 +164,9 @@ const Application = () => {
         />
       </div>
 
-      {/* Field 3: Website Discovery */}
-      <div className="mb-6">
+      {/* Other Fields */}
+        {/* Field 3: Website Discovery */}
+        <div className="mb-6">
         <label htmlFor="websiteDiscovery" className="block text-sm lg:text-md font-medium text-gray-100">
           How did you find my website?
         </label>
@@ -251,6 +349,37 @@ const Application = () => {
         </select>
       </div>
 
+      {/* Field 13.5 check box section  */}
+      <div className="mb-6">
+  <label
+    htmlFor="humiliationLevel"
+    className="block text-sm md:text-base lg:text-lg font-medium text-gray-100 mb-4"
+  >
+    Check Off All Interests
+  </label>
+  <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-4 ">
+    {interests.map((interest, index) => (
+      <div
+        key={index}
+        className="flex items-center space-x-2 border border-gray-900 rounded-md px-2 py-2 bg-gray-[#000300]"
+      >
+        <input
+          type="checkbox"
+          value={interest}
+          checked={formData.selectedInterests.includes(interest)}
+          onChange={() => handleCheckboxChange(interest)}
+          className="h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 rounded"
+        />
+        <span className="text-gray-300 text-xs md:text-sm lg:text-sm">{interest}</span>
+      </div>
+    ))}
+  </div>
+</div>
+
+
+
+
+
       {/* Field 14: Impact Play Level */}
       <div className="mb-6">
         <label htmlFor="impactPlayLevel" className="block text-sm lg:text-md font-medium text-gray-100">
@@ -291,14 +420,31 @@ const Application = () => {
           You will be ignored otherwise. If you have questions about My availability, 
           Email prior to submitting application.</h2>
       </div>
+      {/* Add all your fields here as in your original form */}
+
+{/* 
+      Success/Error Messages */}
+      {/* {successMessage && (
+        <p className="text-green-500 text-center mt-4">{successMessage}</p>
+      )}
+      {errorMessage && (
+        <p className="text-red-500 text-center mt-4">{errorMessage}</p>
+      )} */}
 
       <button
         type="submit"
-        className="w-[16vh] bg-[#000300] border border-pink-800 text-pink-700 text-lg font-bold py-3 rounded-md hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
+        className="w-[16vh] bg-[#000300] border border-pink-800 text-pink-700 text-lg font-bold py-3 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2"
       >
         Send
       </button>
     </form>
+    <Modal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        title="Result"
+        message={modalMessage}
+      />
+    </>
   );
 };
 
