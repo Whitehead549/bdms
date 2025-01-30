@@ -10,7 +10,7 @@ const Introduction = () => {
           <div className="section-title mb-8">
             <div className="title-header">
               <h1 className="text-md md:text-xl lg:text-2xl uppercase tracking-wide font-[100] mb-4">
-                Mistress Veronica Vixen
+                Mistress Veronica Vickky
               </h1>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FFF5F5] leading-tight font-lobster">
                 LOS ANGELES <br />
@@ -20,14 +20,13 @@ const Introduction = () => {
             </div>
             <div className="title-desc mt-6 text-pink-400 text-base md:text-lg lg:text-lg max-w-3xl space-y-6 font-semibold">
               <p>
-                Owner of DTLA Pink Dungeon. Well known mean Bitch. ALL My official
-                links can be found on BadGirlVixen.com
+                Owner of DTLA Pink Dungeon.
               </p>
               <p>Make sure you aren't talking to a fake!</p>
               <p>
-                My only reddit is{" "}
+                My only website is{" "}
                 <span className="text-xs lg:text-md md:text-md pr-4 font-semibold">
-                  https://www.reddit.com/user/MistressVeronicaV
+                  https://www.hollywoodbitches.online/
                 </span>
               </p>
             </div>

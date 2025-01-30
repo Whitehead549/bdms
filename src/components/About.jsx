@@ -22,23 +22,23 @@ const About = () => {
         <>
           DTLA Pink Dungeon is owned by{' '}
           <a
-            href="https://mistressveronicavixen.com/"
+            href="https://www.hollywoodbitches.online/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-red-500 hover:underline font-medium"
             aria-label="Visit Mistress Veronica Vixen's website"
           >
-            Mistress Veronica Vixen
+            Mistress Veronica Vickky
           </a>{' '}
-          and{' '}
+          {' '}
           <a
-            href="https://www.ladylilasbonecastle.com/"
+            href="https://www.hollywoodbitches.online/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-red-500 hover:underline font-medium"
             aria-label="Visit Lady Lila Stern's website"
           >
-            Lady Lila Stern
+            
           </a>
           . The space was created in late 2020 as a private play space for the
           Women and their ProDomme friends, expanding lightly to allow for

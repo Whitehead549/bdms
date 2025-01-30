@@ -30,15 +30,15 @@ const QnAPage = () => {
           <div className="px-4 py-3 rounded shadow-md">
             <h2 className="text-pink-500 text-lg font-semibold mb-2">Is a deposit required?</h2>
             <p className="text-gray-300 text-justify sm:text-left leading-relaxed tracking-normal">
-              Yes, so happy you asked! I will not take a session without a $100 deposit. Deposite can be made via{''}
-              <span className="break-all"> MistressVeronicaVixen@gmail.com. Deposit is taken so that you show up to the session and will always be required unless you have served Me long-term</span>.
+              Yes, so happy you asked! I will not take a session without a $300 deposit. Deposite can be made via{''}
+              <span className="break-all"> Mistressvicckymanager@gmail.com. Deposit is taken so that you show up to the session and will always be required unless you have served Me long-term</span>.
             </p>
         </div>
           <div className="px-4 py-3 rounded shadow-md">
             <h2 className="text-pink-500 text-lg font-semibold mb-2">How can I reach you to find out availability or other questions?</h2>
             <p className="text-gray-300 text-justify sm:text-left leading-relaxed tracking-normal">
               My business phone number is strictly for session booking questions only.{''}
-              <span className="break-all"> You may call between 9am-10pm PST 323-426-7669. Texting is preferred. I will demand respect. If you would like to get to know Me better, follow My Niteflirt listing for a phone chat. You may also email Me. I only answer respectful emails.</span>
+              <span className="break-all"> You may call 804- 476-4492. Texting is preferred. I will demand respect. If you would like to get to know Me better, email Me usong the Application form below. I only answer respectful emails.</span>
             </p>
           </div>
           <div className="px-4 py-3 rounded shadow-md">

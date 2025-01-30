@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.13eb6895.css",
-    "main.js": "/static/js/main.d70e2995.js",
+    "main.js": "/static/js/main.2c2a25fa.js",
     "static/media/dungeon.jpg": "/static/media/dungeon.0e6ae32b020e04e67ccf.jpg",
     "static/media/intro.jpg": "/static/media/intro.7c70edac969cbff686c7.jpg",
     "static/media/surrender.jpg": "/static/media/surrender.3a8e57ba06f5a52fc998.jpg",
@@ -16,10 +16,10 @@
     "static/media/front_boobs.jpg": "/static/media/front_boobs.37faa597e91d95ebe260.jpg",
     "index.html": "/index.html",
     "main.13eb6895.css.map": "/static/css/main.13eb6895.css.map",
-    "main.d70e2995.js.map": "/static/js/main.d70e2995.js.map"
+    "main.2c2a25fa.js.map": "/static/js/main.2c2a25fa.js.map"
   },
   "entrypoints": [
     "static/css/main.13eb6895.css",
-    "static/js/main.d70e2995.js"
+    "static/js/main.2c2a25fa.js"
   ]
 }

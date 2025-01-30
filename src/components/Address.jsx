@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom';
 
 const Address = () => {
   const title1 = 'ADDRESS ME AS';
-  const title2 = 'MISTRESS VERONICA';
+  const title2 = 'MISTRESS VERONICA Viccky';
 
   const contentParagraphs = [
     "I am a Professional Domina based in Los Angeles. I do sessions out of My own sadistic passion for domination and Female Supremacy. I thoroughly love what I do and it radiates in each relationship I build. I strive to leave a life-long impression on you, seducing you into My world of power and pleasure. Breaking a male into full submission to the superior sex is what I was born to do..It's who I am.",
     "As a Woman dedicated to Her craft, I have everything needed to facilitate your desires. Your senses will be stimulated with My collection of latex, leather, fur, lingerie (especially vintage replicas), stockings and high heels. My boot and high heel collection is vast while continuing to grow with contributions from My slave stable.",
     "When you are ready to give in to the impulse of serving a confident, curvy, sexy Latina. You may approach Me respectfully. I am typically available with a 24hour notice following My booking process. I session out of My own private, gorgeous dungeon in downtown Los Angeles.",
-    "Fill out the slave application to be considered. Patience and gratitude is expected. You may also reach Me from session inquires ONLY 9am-10pm at (323)426-7669",
+    "Fill out the slave application to be considered. Patience and gratitude is expected. You may also reach Me from session inquires ONLY 9am-10pm at 804- 476-4492",
   ];
-  const email = "MistressVeronicaVixen@Gmail.com";
+  const email = "Mistressvicckymanager@gmail.com";
 
   return (
     <div className="bg-[#000300] pb-8 px-6 sm:px-8 lg:px-16 text-gray-300">
