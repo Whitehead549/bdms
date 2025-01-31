@@ -8,28 +8,24 @@ import Translate from "../components/Translate";
 const Welcome = () => {
   const images = [image1, image2, image3];
   const [currentImage, setCurrentImage] = useState(0);
-  const [loadCount, setLoadCount] = useState(0);
-
-  useEffect(() => {
-    if (loadCount < 2) {
-      setLoadCount(prevCount => prevCount + 1);
-    }
-  }, [loadCount]);
+  const [renderKey, setRenderKey] = useState(0); // Used to trigger a second render
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    }, 5000); // Change image every 5 seconds
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [images.length]);
 
-  if (loadCount < 2) {
-    return null; // Return null to prevent rendering until the page has loaded twice
-  }
+  useEffect(() => {
+    setTimeout(() => {
+      setRenderKey((prevKey) => prevKey + 1); // Update key after a short delay
+    }, 100); // Re-render after 100ms
+  }, []);
 
   return (
-    <div
+    <div key={renderKey} // Forces re-render
       id="hero-section"
       className="relative w-full h-screen overflow-hidden bg-gradient-to-b from-black via-gray-800 to-black"
     >
@@ -47,8 +43,7 @@ const Welcome = () => {
       <div className="relative z-10 flex h-full flex-col items-center justify-center space-y-8">
         {/* Translator */}
         <Translate />
-       
-
+        
         <Link
           to="/home"
           className="w-64 h-16 flex items-center justify-center text-lg font-semibold text-white border border-white rounded-full bg-transparent hover:bg-white hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -62,7 +57,7 @@ const Welcome = () => {
           Serve Me
         </Link>
         <Link
-          to="gallery"
+          to="/gallery"
           className="w-64 h-16 flex items-center justify-center text-lg font-semibold text-white border border-white rounded-full bg-transparent hover:bg-white hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl"
         >
           Gallery
