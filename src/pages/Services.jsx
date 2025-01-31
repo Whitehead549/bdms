@@ -14,7 +14,7 @@ const Service = () => {
         {/* Text Content */}
         <div className="text-center text-white px-4">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
-          DTLA  Pink  Dungeon
+          DPTLA  Pink  Dungeon
           </h1>
           <p className="mt-4 text-lg sm:text-xl">
           A Luxurious Dungeon Experience

@@ -20,7 +20,7 @@ const About = () => {
       title: "Owners",
       text: (
         <>
-          DTLA Pink Dungeon is owned by{' '}
+          DPTLA Pink Dungeon is owned by{' '}
           <a
             href="https://www.hollywoodbitches.online/"
             target="_blank"
@@ -50,7 +50,7 @@ const About = () => {
       title: "Location",
       text: `The dungeon is located in a discreet, relatively safe area in the
         Arts District. The area has numerous Michelin Star restaurants in
-        walking distance for upscale dining. The views from DTLA Pink overlook
+        walking distance for upscale dining. The views from DPTLA Pink overlook
         gorgeous downtown LA.`,
     },
     dungeon: {
@@ -87,7 +87,7 @@ const About = () => {
       >
         <img
           src={aboutImage}
-          alt="Blue loft play space in the DTLA Pink Dungeon"
+          alt="Blue loft play space in the DPTLA Pink Dungeon"
           className="shadow-lg w-full h-full object-cover"
           loading="lazy"
         />

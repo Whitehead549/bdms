@@ -9,7 +9,7 @@ const Introduction = () => {
         <div className="section-left flex-1 w-full lg:w-1/2">
           <div className="section-title mb-8">
             <div className="title-header">
-              <h1 className="text-md md:text-xl lg:text-2xl uppercase tracking-wide font-[100] mb-4">
+              <h1 className="text-md md:text-xl lg:text-2xl uppercase tracking-wide font-[100] my-4">
                 Mistress Veronica Vickky
               </h1>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#FFF5F5] leading-tight font-lobster">
@@ -20,7 +20,7 @@ const Introduction = () => {
             </div>
             <div className="title-desc mt-6 text-pink-400 text-base md:text-lg lg:text-lg max-w-3xl space-y-6 font-semibold">
               <p>
-                Owner of DTLA Pink Dungeon.
+                Owner of DPTLA Pink Dungeon.
               </p>
               <p>Make sure you aren't talking to a fake!</p>
               <p>

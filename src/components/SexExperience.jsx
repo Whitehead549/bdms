@@ -5,6 +5,7 @@ import image3 from "../assets/dungeon/Knight.jpg";
 import image4 from "../assets/dungeon/dark_room.jpg";
 import image5 from "../assets/dungeon/blue_wear.jpg";
 import image6 from "../assets/dungeon/pink_room.jpg";
+import video from "../assets/hole.mp4"; // Import the video file
 
 const SexExperience = () => {
   const experiences = [
@@ -50,6 +51,19 @@ const SexExperience = () => {
         <p className="mt-2 text-lg md:text-xl">
           Unveil a world where intimacy meets artistry, and every moment is designed to awaken your desires.
         </p>
+        {/* Video Section */}
+        <div className="mt-6">
+          <video 
+            controls 
+            autoPlay 
+            muted 
+            loop 
+            className="w-full max-w-4xl mx-auto"
+          >
+            <source src={video} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </section>
 
       {/* Experience Grid Section */}
