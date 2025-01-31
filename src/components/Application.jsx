@@ -180,9 +180,7 @@ const Application = () => {
            <option value="">--</option>
            <option value="google">Google</option>
            <option value="email">Email</option>
-           <option value="instagram">Instagram</option>
            <option value="facebook">Facebook</option>
-           <option value="twitter">X</option>
         </select>
       </div>
 
