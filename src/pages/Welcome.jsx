@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 import image1 from "../assets/front_boobs.jpg";
 import image2 from "../assets/white_cat.jpg";
 import image3 from "../assets/net_wear.jpg";
@@ -8,8 +7,14 @@ import Translate from "../components/Translate";
 
 const Welcome = () => {
   const images = [image1, image2, image3];
-
   const [currentImage, setCurrentImage] = useState(0);
+  const [loadCount, setLoadCount] = useState(0);
+
+  useEffect(() => {
+    if (loadCount < 2) {
+      setLoadCount(prevCount => prevCount + 1);
+    }
+  }, [loadCount]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -18,6 +23,10 @@ const Welcome = () => {
 
     return () => clearInterval(interval);
   }, [images.length]);
+
+  if (loadCount < 2) {
+    return null; // Return null to prevent rendering until the page has loaded twice
+  }
 
   return (
     <div
