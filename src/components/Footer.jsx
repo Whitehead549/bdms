@@ -34,7 +34,7 @@ const Footer = () => {
       {/* Divider and Copyright */}
       <div className="border-t border-gray-700 my-1 py-4 text-center">
         <p className="text-xs md:text-sm">
-          &copy; {currentYear} Your Company Name. All Rights Reserved.
+          &copy; {currentYear} Hollywoodbitches. All Rights Reserved.
         </p>
       </div>
     </footer>
