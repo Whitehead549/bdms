@@ -10,6 +10,27 @@ const Welcome = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [renderKey, setRenderKey] = useState(0); // Used to trigger a second render
 
+  // Reload the page on the initial visit
+  useEffect(() => {
+    if (!sessionStorage.getItem("reloaded")) {
+      sessionStorage.setItem("reloaded", "true");
+      window.location.reload();
+    }
+  }, []);
+
+  // Reload the page when the user navigates back using the browser button
+  useEffect(() => {
+    const handlePopState = () => {
+      window.location.reload();
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    
+    return () => {
+      window.removeEventListener("popstate", handlePopState);
+    };
+  }, []);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prevImage) => (prevImage + 1) % images.length);
