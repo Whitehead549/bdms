@@ -8,17 +8,28 @@ import Translate from "../components/Translate";
 const Welcome = () => {
   const images = [image1, image2, image3];
   const [currentImage, setCurrentImage] = useState(0);
-  const [renderKey, setRenderKey] = useState(0); // Used to trigger a second render
   const location = useLocation(); // Get current route location
 
-  // Reload on initial visit or when coming back via the back button
+  // Reload on initial visit
   useEffect(() => {
-    if (!sessionStorage.getItem("reloaded") || sessionStorage.getItem("lastPath") !== location.pathname) {
+    if (!sessionStorage.getItem("reloaded")) {
       sessionStorage.setItem("reloaded", "true");
-      sessionStorage.setItem("lastPath", location.pathname);
       window.location.reload();
     }
-  }, [location.pathname]); // Runs whenever the path changes
+  }, []);
+
+  // Reload when navigating back
+  useEffect(() => {
+    const handleBackButton = () => {
+      window.location.reload(); // Force reload on back button
+    };
+
+    window.addEventListener("popstate", handleBackButton);
+    
+    return () => {
+      window.removeEventListener("popstate", handleBackButton);
+    };
+  }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -26,16 +37,10 @@ const Welcome = () => {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [images.length]);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setRenderKey((prevKey) => prevKey + 1); // Update key after a short delay
-    }, 100);
   }, []);
 
   return (
-    <div key={renderKey} 
+    <div 
       id="hero-section"
       className="relative w-full h-screen overflow-hidden bg-gradient-to-b from-black via-gray-800 to-black"
     >
