@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom"; // Import useLocation
 import image1 from "../assets/front_boobs.jpg";
 import image2 from "../assets/white_cat.jpg";
 import image3 from "../assets/net_wear.jpg";
@@ -9,27 +9,16 @@ const Welcome = () => {
   const images = [image1, image2, image3];
   const [currentImage, setCurrentImage] = useState(0);
   const [renderKey, setRenderKey] = useState(0); // Used to trigger a second render
+  const location = useLocation(); // Get current route location
 
-  // Reload the page on the initial visit
+  // Reload on initial visit or when coming back via the back button
   useEffect(() => {
-    if (!sessionStorage.getItem("reloaded")) {
+    if (!sessionStorage.getItem("reloaded") || sessionStorage.getItem("lastPath") !== location.pathname) {
       sessionStorage.setItem("reloaded", "true");
+      sessionStorage.setItem("lastPath", location.pathname);
       window.location.reload();
     }
-  }, []);
-
-  // Reload the page when the user navigates back using the browser button
-  useEffect(() => {
-    const handlePopState = () => {
-      window.location.reload();
-    };
-
-    window.addEventListener("popstate", handlePopState);
-    
-    return () => {
-      window.removeEventListener("popstate", handlePopState);
-    };
-  }, []);
+  }, [location.pathname]); // Runs whenever the path changes
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -42,11 +31,11 @@ const Welcome = () => {
   useEffect(() => {
     setTimeout(() => {
       setRenderKey((prevKey) => prevKey + 1); // Update key after a short delay
-    }, 100); // Re-render after 100ms
+    }, 100);
   }, []);
 
   return (
-    <div key={renderKey} // Forces re-render
+    <div key={renderKey} 
       id="hero-section"
       className="relative w-full h-screen overflow-hidden bg-gradient-to-b from-black via-gray-800 to-black"
     >
