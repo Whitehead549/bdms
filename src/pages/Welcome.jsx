@@ -8,6 +8,7 @@ import Translate from "../components/Translate";
 const Welcome = () => {
   const images = [image1, image2, image3];
   const [currentImage, setCurrentImage] = useState(0);
+  const [showPopup, setShowPopup] = useState(true); // State to control Translate popup
   const location = useLocation(); // Get current route location
 
   // Reload on initial visit
@@ -39,6 +40,10 @@ const Welcome = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const handleProceed = () => {
+    setShowPopup(false); // Hide popup on proceed
+  };
+
   return (
     <div 
       id="hero-section"
@@ -54,30 +59,46 @@ const Welcome = () => {
         />
       </div>
 
-      {/* Buttons and Social Media Icons */}
-      <div className="relative z-10 flex h-full flex-col items-center justify-center space-y-8">
-        {/* Translator */}
-        <Translate />
-        
-        <Link
-          to="/home"
-          className="w-64 h-16 flex items-center justify-center text-lg font-semibold text-white border border-white rounded-full bg-transparent hover:bg-white hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl"
-        >
-          Official Website
-        </Link>
-        <Link
-          to="/serve"
-          className="w-64 h-16 flex items-center justify-center text-lg font-semibold text-white border border-white rounded-full bg-transparent hover:bg-white hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl"
-        >
-          Serve Me
-        </Link>
-        <Link
-          to="/gallery"
-          className="w-64 h-16 flex items-center justify-center text-lg font-semibold text-white border border-white rounded-full bg-transparent hover:bg-white hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl"
-        >
-          Gallery
-        </Link>
-      </div>
+      {/* Translate Popup */}
+      {showPopup && (
+        <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-95 z-50">
+          <div className="bg-gray-50 p-6 rounded-lg shadow-lg max-w-xs w-full text-center">
+            <h2 className="text-xl font-semibold text-gray-800 mb-4">Welcome!</h2>
+            <p className="text-gray-600 mb-4">Select your language below before clicking "Proceed".</p>
+            <Translate />
+            <button
+              onClick={handleProceed}
+              className="mt-4 w-full bg-pink-600 text-white font-semibold py-2 rounded-full hover:bg-pink-500 transition duration-200"
+            >
+              Proceed
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Buttons and Social Media Icons (Only Show If Popup is Dismissed) */}
+      {!showPopup && (
+        <div className="relative z-10 flex h-full flex-col items-center justify-center space-y-8">
+          <Link
+            to="/home"
+            className="w-64 h-16 flex items-center justify-center text-lg font-semibold text-white border border-white rounded-full bg-transparent hover:bg-white hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl"
+          >
+            Official Website
+          </Link>
+          <Link
+            to="/serve"
+            className="w-64 h-16 flex items-center justify-center text-lg font-semibold text-white border border-white rounded-full bg-transparent hover:bg-white hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl"
+          >
+            Serve Me
+          </Link>
+          <Link
+            to="/gallery"
+            className="w-64 h-16 flex items-center justify-center text-lg font-semibold text-white border border-white rounded-full bg-transparent hover:bg-white hover:text-black transition-all duration-300 shadow-lg hover:shadow-xl"
+          >
+            Gallery
+          </Link>
+        </div>
+      )}
     </div>
   );
 };

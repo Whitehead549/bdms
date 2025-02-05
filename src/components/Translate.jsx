@@ -15,26 +15,10 @@ const Translate = () => {
     addTranslateScript();
   }, []);
 
-  const containerStyle = {
-    position: 'relative',
-    zIndex: 50,
-    display: 'inline-block',
-    padding: '8px',
-    backgroundColor: 'rgba(255, 255, 255, 0.8)',
-    borderRadius: '32px', // Rounded corners
-    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', // Subtle shadow
-  };
-
-  const widgetStyle = {
-    width: '100%',
-    textAlign: 'center',
-  };
-
   return (
-    <div style={containerStyle}>
-      <div id="google_translate_element" style={widgetStyle}></div>
+    <div className="relative z-50 inline-block p-2 bg-gray-50 rounded shadow-lg">
+      <div id="google_translate_element" className="w-full"></div>
     </div>
   );
 };
-
 export default Translate;
