@@ -62,7 +62,7 @@ const Welcome = () => {
       {/* Translate Popup */}
       {showPopup && (
         <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-95 z-50">
-          <div className="bg-gray-50 p-6 rounded-lg shadow-lg max-w-xs w-full text-center">
+          <div className="bg-gray-50 p-6 rounded-lg shadow-lg max-w-xs w-full text-center mx-8">
             <h2 className="text-xl font-semibold text-gray-800 mb-4">Welcome!</h2>
             <p className="text-gray-600 mb-4">Select your language below before clicking "Proceed".</p>
             <Translate />
