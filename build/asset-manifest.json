@@ -1,26 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.64e5365d.css",
-    "main.js": "/static/js/main.bf84ddf3.js",
+    "main.css": "/static/css/main.ef6a279b.css",
+    "main.js": "/static/js/main.9a623cb0.js",
     "static/media/hole.mp4": "/static/media/hole.50f5028946cae510ca47.mp4",
     "static/media/dungeon.jpg": "/static/media/dungeon.0e6ae32b020e04e67ccf.jpg",
     "static/media/intro.jpg": "/static/media/intro.7c70edac969cbff686c7.jpg",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
     "static/media/surrender.jpg": "/static/media/surrender.3a8e57ba06f5a52fc998.jpg",
     "static/media/slave_miss.jpg": "/static/media/slave_miss.38520d7ae25ed8a6fb30.jpg",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.c210719e60948b211a12.woff2",
     "static/media/dark_room.jpg": "/static/media/dark_room.6b5defae7729231481dd.jpg",
     "static/media/Knight.jpg": "/static/media/Knight.3f2dd4f509074d01c3aa.jpg",
     "static/media/red_wear.jpg": "/static/media/red_wear.28215e904e2dd7c9339e.jpg",
     "static/media/pink_room.jpg": "/static/media/pink_room.eb5a175938003222c199.jpg",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
     "static/media/net_wear.jpg": "/static/media/net_wear.fde87f4a6599dbe5c9a9.jpg",
     "static/media/white_cat.jpg": "/static/media/white_cat.bde7c6b4ef1b9d6151bd.jpg",
     "static/media/blue_wear.jpg": "/static/media/blue_wear.c5993c1282df3e016c8c.jpg",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
     "static/media/front_boobs.jpg": "/static/media/front_boobs.37faa597e91d95ebe260.jpg",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/index.html",
-    "main.64e5365d.css.map": "/static/css/main.64e5365d.css.map",
-    "main.bf84ddf3.js.map": "/static/js/main.bf84ddf3.js.map"
+    "main.ef6a279b.css.map": "/static/css/main.ef6a279b.css.map",
+    "main.9a623cb0.js.map": "/static/js/main.9a623cb0.js.map"
   },
   "entrypoints": [
-    "static/css/main.64e5365d.css",
-    "static/js/main.bf84ddf3.js"
+    "static/css/main.ef6a279b.css",
+    "static/js/main.9a623cb0.js"
   ]
 }
