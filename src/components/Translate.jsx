@@ -16,7 +16,7 @@ const Translate = () => {
   }, []);
 
   return (
-    <div className="relative z-50 inline-block p-2 bg-gray-50 rounded shadow-lg">
+    <div className="relative z-50 inline-block p-2 bg-gray-400 bg-opacity-5">
       <div id="google_translate_element" className="w-full"></div>
     </div>
   );

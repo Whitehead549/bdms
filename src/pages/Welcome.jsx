@@ -61,14 +61,14 @@ const Welcome = () => {
 
       {/* Translate Popup */}
       {showPopup && (
-        <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-95 z-50">
-          <div className="bg-gray-50 p-6 rounded-lg shadow-lg max-w-xs w-full text-center mx-8">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4">Welcome!</h2>
-            <p className="text-gray-600 mb-4">Select your language below before clicking "Proceed".</p>
+        <div className="fixed inset-0 flex items-center justify-center bg-gray-500 bg-opacity-35 z-50">
+          <div className="bg-gray-500 p-6 rounded-lg shadow-lg max-w-xs w-full text-center mx-8 bg-opacity-35">
+            <h2 className="text-xl font-semibold text-white mb-4">Welcome!</h2>
+            <p className="text-white mb-4">Select your language below before clicking "Proceed".</p>
             <Translate />
             <button
               onClick={handleProceed}
-              className="mt-4 w-full bg-pink-600 text-white font-semibold py-2 rounded-full hover:bg-pink-500 transition duration-200"
+              className="mt-0 w-2/3 bg-pink-500 text-white font-semibold py-2 rounded-full hover:bg-pink-600 transition duration-200"
             >
               Proceed
             </button>
