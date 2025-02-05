@@ -19,7 +19,7 @@ function App() {
         href="https://t.me/msverovixen"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-blue-500 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition duration-300 ease-in-out z-9999 pointer-events-auto flex items-center space-x-2"
+        className="fixed bottom-6 right-6 bg-blue-500 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition duration-300 ease-in-out z-50 pointer-events-auto flex items-center space-x-2"
       >
         <i className="fab fa-telegram-plane text-2xl"></i>
         <span className="text-sm font-semibold">Chat Me</span>
